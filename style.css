@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body {
+    background-color: #0D0D0D;
+    position: relative;
+}
+.detTopBody {
+    position: absolute;
+    z-index: 1;
+}
+
+.detLateraisBody {
+    position: absolute;
+    top: 975px;
+    z-index: 1;
+}
+.indexSections {
+    z-index: 2;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(auto, auto);
+    grid-template-columns: 154px 1040px 154px;
+}
+
+.center {
+    grid-column: 2 / 3;
+}
+
+nav{
+    width: 1040px;
+    height: 60px;
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border: 1px solid rgba(94, 94, 94, 0.40);
+    background: rgba(24, 24, 29, 0.30);
+    backdrop-filter: blur(2px); 
+    border-radius: 12px;
+}
+
+.nav-list>li>a {
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 18px;
+    font-weight: 500px;
+    color: #C5C5C5;    
+    padding: 20px;
+    display: flex;
+}
+
+nav div, .nav-list{
+    display: flex;    
+}
+
+.logo-nav{
+    margin: 4px 30px 4px 30px;
+}
+
+.icon-nav{
+    margin: 10px;   
+}
+
+.container-icons {
+    margin-right: 20px;
+}
+
+/* ========= // ========= banner ========= // ========= */
+
+section#banner {
+    height: 650px;
+    display: flex;
+    align-items: center;
+    
+}
+h2.bn {
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 48px;
+    font-weight: 500px;
+    color: #808080; 
+
+}
+h1.bn {
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 100px;
+    font-weight: 600px;
+    color: #fff; 
+}
+.virgula {
+    text-shadow: 4px 4px 4px #00DBA7;
+}
+h3.bn {
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 32px;
+    font-weight: 500px;
+    color: #808080; 
+}
+
+div#buttons {
+    display: flex;
+    margin-top: 50px;
+    
+}
+
+
+
+.botao {
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 22px;
+    font-weight: 500px;
+    color: #a7a7a7;
+    background: linear-gradient(180deg, #1A1A1A 0%, #131313 100%);
+    box-shadow: 0px 0px 2px 0px rgba(11, 51, 31, 0.10);
+    user-select: none;
+    cursor: pointer;
+    height: 60px;
+    padding: 16px 32px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+.botao1 {
+    color: #00DBA7;
+    box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(255, 255, 255, 0.08) inset, 0px 1px 2px 0px rgba(255, 255, 255, 0.02) inset;   
+}
+
+.botao2 {
+    margin-left: 60px;
+}
+.icon-download {
+    margin-left: 10px;
+}
+
+div#foto {
+    margin-top: 86px;
+}
+
+
+/* ========= // ========= projetos ========= // ========= */
+section#Projetos {
+    margin-top: 30px;
+}
+
+div.titulos-body>h1 {
+    display: flex;
+    align-items: flex-end;
+    display: inline;
+    font-family: 'Titillium Web', sans-serif;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700px;
+}
+div#tituloProjetos>img {
+    justify-content: flex-end;
+}
+
+div#cards {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 520px;
+    gap: 36px;
+
+}
+
+div.card {
+    height: 520px;
+    max-width: 320px;
+    border-radius: 8px;
+    background-color: #181818;
+    box-shadow: 0px 1px 2px #181818;
+    display: flex;
+    flex-direction: column;
+    position: relative;   
+}
+div.img-card {
+    z-index: 1;
+}
+
+.descricao-card{
+    position: relative;
+    
+    
+}
+.detalhes-cards {
+    width: 340px;
+    background-color: #fff;
+}
+
+.detalhes-cards>img {
+    height: 220px;
+    width: 320px;
+    top: -24px;    
+    position: absolute;
+    border-radius: 8px;
+    z-index: 0;    
+}
+
+.tit-descricao-card {
+    position: relative;
+    display: flex;
+}
+.tit-descricao-card>img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+div.tit-card>h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    margin: 10px;
+    font-size: 34px;
+    display: inline;
+    z-index: 2;
+    
+}
+
+
+.Tecnologias {
+    width: 140px;
+    display: flex;
+    margin: 25px;
+    justify-content: space-between;
+}
+
+/* ========= // ========= sobre ========= // ========= */
+
+
+section#sobre {
+    height: 600px;
+    margin-top: 120px;
+    align-items: center;
+    background-color: rgba(24, 24, 29, 0.40);
+    backdrop-filter: blur(7px);
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-rows: repeat(auto, auto);
+    grid-template-columns: 154px 1040px 154px;
+}
+
+div.texto-sobre {
+    margin-top: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    color: #ccc;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+/* ========= // ========= habilidades ========= // ========= */
+
+section#habilidades {
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+div.conatainer-habilidades {
+    margin-top: 30px;
+    display: flex;
+}
+ul.list-habilidades {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    color: #ccc;
+    font-size: 24px;
+    margin-right: 60px;
+}
+
+/* ========= // ========= footer ========= // ========= */
+
+footer {
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 154px 1040px 154px;
+    background-color: rgba(24, 24, 29, 0.30);
+    backdrop-filter: blur(2px);
+    background-image: url("src/imagens/body/BkEffectBotton.svg");
+    background-size: 1348px 300px;
+    background-repeat: no-repeat;
+}
+div.footer {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.icone-footer {
+    display: flex;
+    width: 272px;
+    flex-direction: column;
+    align-items: center;
+}
+.icone-footer> h3, p {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+}
