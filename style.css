@@ -321,6 +321,7 @@ p {
 
 
   .grid {
+    overflow-x: hidden;
     grid-template-columns: 20px 360px 20px;
   }
 
