@@ -10,8 +10,9 @@ const myObserver = new IntersectionObserver((entradas) => {
 })
 
 const elements = document.querySelectorAll('.hidden') 
-
 elements.forEach((e) => myObserver.observe(e))
+
+
 
 const observ =new IntersectionObserver((entries) => {
     entries.forEach((a) => {
@@ -23,9 +24,6 @@ const observ =new IntersectionObserver((entries) => {
 
     })
 })
-
-
-
 
 const target =document.querySelectorAll(`[data-anime]`)
 target.forEach((e) => observ.observe(e))
