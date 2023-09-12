@@ -28,3 +28,16 @@ const observ =new IntersectionObserver((entries) => {
 const target =document.querySelectorAll(`[data-anime]`)
 target.forEach((e) => observ.observe(e))
 
+
+
+const hamburger = document.querySelector(".hamburguer") 
+const iconMenu = document.querySelector(".hamburguer")
+const nav = document.querySelector(".nav-list")
+
+
+hamburger.addEventListener("click", () =>
+nav.classList.toggle("active"));
+hamburger.addEventListener("click", () =>
+iconMenu.classList.toggle("hamburguer-active"));
+
+
