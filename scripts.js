@@ -35,9 +35,13 @@ const iconMenu = document.querySelector(".hamburguer")
 const nav = document.querySelector(".nav-list")
 
 
+
 hamburger.addEventListener("click", () =>
 nav.classList.toggle("active"));
 hamburger.addEventListener("click", () =>
 iconMenu.classList.toggle("hamburguer-active"));
 
-
+nav.addEventListener("click", () => 
+nav.classList.remove("active"));
+nav.addEventListener("click", () => 
+iconMenu.classList.remove("hamburguer-active"));
